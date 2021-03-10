@@ -1,0 +1,32 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Scripts/BoardUI.cs" type="Script" id=1]
+[ext_resource path="res://Scripts/GameManager.cs" type="Script" id=2]
+[ext_resource path="res://Themes/ClassicPieces.tres" type="Resource" id=3]
+[ext_resource path="res://Sprites/square.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Boards/board_brown.png" type="Texture" id=5]
+[ext_resource path="res://Sounds/capture.wav" type="AudioStream" id=6]
+[ext_resource path="res://Sounds/move.wav" type="AudioStream" id=7]
+
+[node name="GameManager" type="Node"]
+script = ExtResource( 2 )
+
+[node name="BoardUI" type="Node2D" parent="."]
+position = Vector2( 320, 40 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+pieceTheme = ExtResource( 3 )
+squareTexture = ExtResource( 4 )
+
+[node name="BoardSprite" type="Sprite" parent="BoardUI"]
+scale = Vector2( 0.533333, 0.533333 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="MoveSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+
+[node name="CaptureSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )

@@ -1,0 +1,29 @@
+[gd_resource type="Resource" load_steps=15 format=2]
+
+[ext_resource path="res://Scripts/PieceTheme.cs" type="Script" id=1]
+[ext_resource path="res://Sprites/Boards/board_brown.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Pieces/ClassicPieces/bq.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Pieces/ClassicPieces/wq.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Pieces/ClassicPieces/wr.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Pieces/ClassicPieces/bk.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Pieces/ClassicPieces/wb.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Pieces/ClassicPieces/wn.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/Pieces/ClassicPieces/bb.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/Pieces/ClassicPieces/bn.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/Pieces/ClassicPieces/wp.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/Pieces/ClassicPieces/bp.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/Pieces/ClassicPieces/br.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/Pieces/ClassicPieces/wk.png" type="Texture" id=14]
+
+[resource]
+script = ExtResource( 1 )
+colorValidMove = Color( 0.803922, 0.0352941, 0.0352941, 0.666667 )
+knightSprite = [ ExtResource( 8 ), ExtResource( 10 ) ]
+rookSprite = [ ExtResource( 5 ), ExtResource( 13 ) ]
+pawnSprite = [ ExtResource( 11 ), ExtResource( 12 ) ]
+bishopSprite = [ ExtResource( 7 ), ExtResource( 9 ) ]
+colorPieceWarning = Color( 0.803922, 0.0352941, 0.0352941, 0.666667 )
+colorLastMove = Color( 0.839216, 0.831373, 0.172549, 0.666667 )
+kingSprite = [ ExtResource( 14 ), ExtResource( 6 ) ]
+queenSprite = [ ExtResource( 4 ), ExtResource( 3 ) ]
+boardSprite = ExtResource( 2 )
